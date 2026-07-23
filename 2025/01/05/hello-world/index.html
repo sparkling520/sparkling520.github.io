@@ -262,8 +262,8 @@
   const loadArtalk = async (el, pageKey) => {
     if (typeof Artalk === 'object') initArtalk(el, pageKey)
     else {
-      await btf.getCSS('https://cdn.jsdelivr.net/npm/artalk@2.9.1/dist/Artalk.min.css')
-      await btf.getScript('https://cdn.jsdelivr.net/npm/artalk@2.9.1/dist/Artalk.min.js')
+      await btf.getCSS('https://artalk.luvhub.cn/dist/Artalk.css')
+      await btf.getScript('https://artalk.luvhub.cn/dist/Artalk.js')
       initArtalk(el, pageKey)
     }
   }
